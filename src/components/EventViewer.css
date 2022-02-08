@@ -61,3 +61,13 @@
 .viewer ul.event-modifiers li.released {
   background: lightgray;
 }
+
+code.inline {
+  margin: 0.2rem;
+  border-radius: 4px;
+  border: solid 1px gray;
+  background: lightgray;
+  padding: 0 0.2rem;
+  color: rgb(255, 97, 40);
+  line-height: 1.5;
+}
