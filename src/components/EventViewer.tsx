@@ -44,10 +44,18 @@ const EventViewer: React.FC<Props> = ({ event }) => {
         </li>
       </ul>
       <ul className="event-modifiers">
-        <li className={`key ${event.shiftKey ? 'hold' : 'released'}`}>Shift</li>
-        <li className={`key ${event.ctrlKey ? 'hold' : 'released'}`}>Ctrl</li>
-        <li className={`key ${event.altKey ? 'hold' : 'released'}`}>Alt</li>
-        <li className={`key ${event.metaKey ? 'hold' : 'released'}`}>Meta</li>
+        <Tooltip title={`shift key is ${event.shiftKey ? 'hold' : 'released'}`}>
+          <li className={`key ${event.shiftKey ? 'hold' : 'released'}`}>Shift</li>
+        </Tooltip>
+        <Tooltip title={`control key is ${event.ctrlKey ? 'hold' : 'released'}`}>
+          <li className={`key ${event.ctrlKey ? 'hold' : 'released'}`}>Ctrl</li>
+        </Tooltip>
+        <Tooltip title={`alt key is ${event.altKey ? 'hold' : 'released'}`}>
+          <li className={`key ${event.altKey ? 'hold' : 'released'}`}>Alt</li>
+        </Tooltip>
+        <Tooltip title={`meta key is ${event.metaKey ? 'hold' : 'released'}`}>
+          <li className={`key ${event.metaKey ? 'hold' : 'released'}`}>Meta</li>
+        </Tooltip>
       </ul>
     </div>
   );
