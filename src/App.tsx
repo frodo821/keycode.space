@@ -11,7 +11,7 @@ const App: React.FC = () => {
       e.preventDefault();
     }
     window.addEventListener('keydown', listener);
-  }, [null]);
+  }, []);
 
   return (
     <div className="App">
