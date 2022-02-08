@@ -1,0 +1,63 @@
+.viewer {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.viewer .key-event {
+    display: block;
+    font-size: 200%;
+    margin: 0.5rem;
+}
+
+.viewer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.viewer ul li {
+    display: inline-block;
+    margin-left: 1rem
+}
+
+.viewer ul.event-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.viewer ul.event-details li {
+    border: solid 2px;
+    border-radius: 4px;
+    padding: 0.3rem;
+}
+
+.viewer ul.event-details li .name {
+    border-bottom: solid 2px lightgray;
+    padding-bottom: 0.2rem;
+}
+
+.viewer ul.event-details li .value {
+    white-space: pre;
+}
+
+.viewer ul.event-modifiers {
+  max-width: 64vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.viewer ul.event-modifiers li {
+    border: solid 2px;
+    border-radius: 4px;
+    padding: 0.3rem;
+}
+
+.viewer ul.event-modifiers li.hold {
+  background: greenyellow;
+}
+
+.viewer ul.event-modifiers li.released {
+  background: lightgray;
+}
